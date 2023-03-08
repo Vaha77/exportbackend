@@ -10,7 +10,7 @@ async ctx => {
 
 async ctx => {
 ctx.wizard.state.user = {};
-ctx.wizard.state.user.fullname = ctx.message?.text;
+ctx.wizard.state.user.fullname = ctx.message.text;
 let txt = `Telefon raqamingizni yuboring.`;
 return ctx.replyWithHTML(txt, {
     ...Markup.keyboard([
