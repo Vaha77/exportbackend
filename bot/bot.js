@@ -1,10 +1,10 @@
 const {Telegraf, session} = require("telegraf");
-const httpsProxyAgent = require("https-proxy-agent");
-var needle = require('needle');
+// const httpsProxyAgent = require("https-proxy-agent");
+// var needle = require('needle');
 let axios = require("axios");
 let fs = require("fs")
 
-const path = require("path");
+// const path = require("path");
 const {stage} = require("./scenes")
 
 const bot = new Telegraf(process.env.BOT_TOKEN, 
