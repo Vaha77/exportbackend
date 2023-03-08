@@ -139,7 +139,7 @@ let uploadImage = upload.array("images",4);
                 req.files.forEach(async file => {
                     let filename = file.filename;
                     let filePath = path.join(__dirname, `../uploads/images/${filename}`);
-                    await fs.unlink(filePath, (err) => console.log(err?.message));
+                    await fs.unlink(filePath, (err) => console.log(err.message));
                 })
             }
             return res.json({msg:error.details[0].message})
