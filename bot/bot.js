@@ -20,6 +20,6 @@ bot.use(stage.middleware());
 
 bot.start(ctx => ctx.scene.enter("start"));
 
-// bot.launch();
+bot.launch();
  
 module.exports = bot;
