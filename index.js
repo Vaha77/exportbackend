@@ -22,6 +22,6 @@ app.use("/uploads", express.static("uploads"))
 routes.forEach(router => app.use("/api/",router));
 
 
-let port = process.env.PORT;
-let host = process.env.HOST;
-app.listen(port, host, ()=> console.log(`server is ${port} runinng`))
+let port = process.env.PORT || 5000;
+// let host = process.env.HOST;
+app.listen(port, ()=> console.log(`server is ${port} runinng`))
